@@ -38,5 +38,24 @@
         <img id="dice-image" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Dice-1-b.svg" alt="Dice" class="dice">
         <br>
         <button onclick="rollDice()">Roll Dice</button>
+
+    </div>
+    <script>
+        function rollDice() {
+            const diceImages = [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1b/Dice-1-b.svg",
+                "https://upload.wikimedia.org/wikipedia/commons/5/5f/Dice-2-b.svg",
+                "https://upload.wikimedia.org/wikipedia/commons/b/b1/Dice-3-b.svg",
+                "https://upload.wikimedia.org/wikipedia/commons/f/fd/Dice-4-b.svg",
+                "https://upload.wikimedia.org/wikipedia/commons/0/08/Dice-5-b.svg",
+                "https://upload.wikimedia.org/wikipedia/commons/2/26/Dice-6-b.svg"
+            ];
+            const randomIndex = Math.floor(Math.random() * diceImages.length);
+            document.getElementById("dice-image").src = diceImages[randomIndex];
+        }
+    </script>
+</body>
+</html>
+
     
 
